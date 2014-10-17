@@ -1,0 +1,46 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: lato;
+	background-color: white;
+}
+
+#header {
+	font-size: 200%;
+	background-color: white;
+	text-align: center;
+	vertical-align: bottom;
+	color: rgb(30, 178, 192);
+	border-bottom: 1px solid rgb(30, 178, 192);
+	padding: 5px;
+	min-height: 100px;
+	width: 100%;
+	margin: 0px;
+}
+
+ul {
+	width: 570px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-bottom: 1px solid rgb(30, 178, 192);
+	text-align: center;
+}
+
+li {
+	display: inline;
+	margin: 0px 3px;
+}
+
+p {
+	color: rgb(30, 178, 192);
+	text-align: center;
+}
+
+a {
+	color: rgb(30, 178, 192);
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;
+}
+a:hover {
+	color: gray;
+}
