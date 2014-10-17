@@ -1,0 +1,3 @@
+This is the repo for my personal site. I’ve been toying with learning web dev for a while now…
+
+This is the beginning.
