@@ -36,11 +36,27 @@ p {
 	text-align: center;
 }
 
+#emailForm {
+	text-align: center;
+	color: rgb(30, 178, 192);
+}
+
+textarea, input {
+	border: 1px solid rgb(30, 178, 192);
+	color: rgb(30, 178, 192);
+	background-color: white;
+}
+
 a {
 	color: rgb(30, 178, 192);
 	text-decoration: none;
 	padding: 6px 18px 5px 18px;
 }
+
 a:hover {
+	color: gray;
+}
+
+a:active {
 	color: gray;
 }
