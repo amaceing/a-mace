@@ -28,9 +28,21 @@ ul {
 
 #h3 {
 	font-size: 20px;
-	padding: 15px;
+	padding: 10px;
 	text-align: center;
-	color: rgb(38, 178, 192);
+	color: rgb(30, 178, 192);
+}
+
+#projectsTable {
+
+}
+
+td {
+	border: none;
+}
+
+td:hover {
+	background-color: rgb(30, 178,192);
 }
 
 li {
