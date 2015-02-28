@@ -12,7 +12,7 @@ body {
 	vertical-align: bottom;
 	color: rgb(30, 178, 192);
 	border-bottom: 1px solid rgb(30, 178, 192);
-	padding: 5px;
+	padding: 8px;
 	min-height: 100px;
 	width: 100%;
 	margin: 0px;
@@ -21,7 +21,7 @@ body {
 ul {
 	width: 570px;
 	padding: 15px;
-	margin: 0px auto 0px auto;
+	margin: 0px auto 2px auto;
 	border-bottom: 1px solid rgb(30, 178, 192);
 	text-align: center;
 }
@@ -33,16 +33,29 @@ ul {
 	color: rgb(30, 178, 192);
 }
 
-#projectsTable {
-
+table {
+	border-collapse: collapse;
 }
 
 td {
-	border: none;
+	width: 220px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 1px 1px 1px 1px;
 }
 
 td:hover {
-	background-color: rgb(30, 178,192);
+	border: 2px solid rgb(30, 178, 192);
+}
+
+td img {
+	padding-right: 8px;
+}
+
+img {
+	display: inline-table;
+	vertical-align: middle;
 }
 
 li {
@@ -74,9 +87,5 @@ a {
 }
 
 a:hover {
-	color: gray;
-}
-
-a:active {
 	color: gray;
 }
