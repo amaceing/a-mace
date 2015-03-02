@@ -20,8 +20,8 @@ body {
 	margin: 0px;
 }
 
-ul {
-	width: 570px;
+#navigation {
+	width: 500px;
 	padding: 15px;
 	margin: 0px auto 2px auto;
 	border-bottom: 1px solid rgb(30, 178, 192);
