@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 	echo "nope";
     die("Connection failed: " . $conn->connect_error);
 } else {
-	echo "Connected successfully bitch";
+	echo "Connected successfully ";
 }
 
 ?> 

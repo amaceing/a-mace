@@ -1,13 +1,22 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Login</title>
+		<link href="css/erblog.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
+		
 		<form action="php/checkSignup.php" method="POST">
-	    <p><input id="username" name="username" type="text" placeholder="Name"></p>
-	    <p><input id="email" name="email" type="text" placeholder="Email"></p>
-	    <p><input id="password" name="password" type="password" placeholder="Password">
-	    <input name="action" type="hidden" value="signup" /></p>
+		    <p><input id="username" name="username" type="text" placeholder="Username"></p>
+		    <p><input id="password" name="password" type="password" placeholder="Password">
+		    <input name="action" type="hidden" value="login" /></p>
+		    <p><input type="submit" value="Login" /></p>
+		 </form>
+		<form action="php/checkSignup.php" method="POST">
+		    <p><input id="username" name="username" type="text" placeholder="Userame"></p>
+		    <p><input id="email" name="email" type="text" placeholder="Email"></p>
+		    <p><input id="password" name="password" type="password" placeholder="Password">
+		    <input name="action" type="hidden" value="signup" /></p>
 	    <p><input type="submit" value="Signup" /></p>
 	</body>
 </html>
