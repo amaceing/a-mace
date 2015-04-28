@@ -17,3 +17,20 @@ body {
 	width: 99%;
 	margin: 0px;
 }
+
+#forms {
+	width: 400px;
+	margin: 0 auto;
+	position: relative;
+	
+	background: #EAEAEA;
+	border-radius: 5px;
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#loginForm {
+	background-color: #EBC2FF;
+}
