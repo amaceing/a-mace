@@ -7,18 +7,66 @@ body {
 	background-color: white;
 }
 
-#header {
-	font-size: 200%;
-	background-color: white;
-	text-align: center;
-	vertical-align: bottom;
-	color: rgb(30, 178, 192);
-	border-bottom: 1px solid rgb(30, 178, 192);
-	padding: 8px;
-	min-height: 100px;
-	width: 99%;
-	margin: 0px;
+h1 {
+	font-size: 70px;
+	color: white;
 }
+
+.banner {
+    background-color: rgb(30, 178, 192);
+    margin: 0;
+}
+
+p {
+	font-size: 17px;
+	color: white;
+	text-align: left;
+}
+
+.top .navbar-brand {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 10px;
+    background-color: white;
+    color: rgb(30, 178, 192);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar-brand li a:hover {
+	color: rgb(30, 178, 192);
+    font-family: 'Lato', sans-serif;
+    background-color: light-gray;
+}
+
+.navbar-toggle {
+    color: #009b9b;
+    font-size: 32px;
+    margin: 3px;
+    padding: 2px 5px;
+    line-height: 32px;
+}
+.navbar-toggle:hover {
+    background-color: #373737;
+}
+.navbar-nav {
+    margin: 0;
+    line-height: 50px;
+    text-align: bottom;
+}
+
+.navbar-nav li a {
+    color: rgb(30, 178, 192);
+    font-family: 'Lato', sans-serif;
+}
+.navbar-nav li a:hover {
+    background-color: light-gray;
+}
+
+
+
+
 
 #navigation {
 	width: 500px;
@@ -65,11 +113,6 @@ li {
 	margin: 0px 3px;
 }
 
-p {
-	font-size: 17px;
-	color: rgb(30, 178, 192);
-	text-align: center;
-}
 
 #emailForm {
 	text-align: center;
