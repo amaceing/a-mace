@@ -15,6 +15,7 @@ h1 {
 .banner {
     background-color: rgb(30, 178, 192);
     margin: 0;
+    border-radius: 5px;
 }
 
 p {
@@ -47,9 +48,11 @@ p {
     padding: 2px 5px;
     line-height: 32px;
 }
+
 .navbar-toggle:hover {
     background-color: #373737;
 }
+
 .navbar-nav {
 	float: right;
     margin: 0;
@@ -63,4 +66,50 @@ p {
 }
 .navbar-nav li a:hover {
     background-color: light-gray;
+}
+
+.panel {
+    background-image: none;
+    background-color: white;
+    border: 1px solid rgb(30, 178, 192);
+    color: rgb(30, 178, 192);
+}
+
+.panel > .panel-heading {
+	color: white;
+	background-color: rgb(30, 178, 192);
+}
+
+#inputName {
+	border: 1px solid rgb(30, 178, 192);
+}
+#inputEmail {
+	border: 1px solid rgb(30, 178, 192);
+}
+#inputSubject {
+	border: 1px solid rgb(30, 178, 192);
+}
+#inputMessage {
+	border: 1px solid rgb(30, 178, 192);
+}
+
+#submitButton {
+	border: 1px solid rgb(30, 178, 192);
+	color: rgb(30, 178, 192);
+}
+
+.col-md-9 {
+	color: rgb(30, 178, 192);
+}
+
+.col-md-3 {
+	color: white;
+}
+
+.col-md-3 > ul {
+	border: 1px solid rgb(30, 178, 192);
+}
+
+div.panel-heading {
+	background-color: rgb(30, 178, 192);
 }
