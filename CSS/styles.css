@@ -4,23 +4,27 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: lato;
-	background-color: white;
+	background-color: #F2F1ED;
 }
 
 h1 {
 	font-size: 70px;
-	color: white;
+	color: #D66360;
+}
+
+h3 {
+    color: #D66360;
 }
 
 .banner {
-    background-color: rgb(30, 178, 192);
+    background-color: white;
     margin: 0;
     border-radius: 5px;
 }
 
-p {
+.banner > .container > p {
 	font-size: 17px;
-	color: white;
+	color: #D66360;
 	text-align: left;
 }
 
@@ -30,38 +34,33 @@ p {
     text-align: center;
     padding: 0 10px;
     background-color: white;
-    color: rgb(30, 178, 192);
+    color: #D66360;
     text-decoration: none;
     font-size: 25px;
+    background-color: #F2F1ED
 }
 
 .navbar-brand li a:hover {
-	color: rgb(30, 178, 192);
+	color: #D66360;
     font-family: 'Lato', sans-serif;
-    background-color: light-gray;
 }
 
 .navbar-toggle {
-    color: #009b9b;
+    color: #D66360;
     font-size: 32px;
     margin: 3px;
     padding: 2px 5px;
     line-height: 32px;
 }
 
-.navbar-toggle:hover {
-    background-color: #373737;
-}
-
 .navbar-nav {
-	float: right;
-    margin: 0;
+    float: right;
+    margin-right: 10px;
     line-height: 50px;
-    text-align: bottom;
 }
 
 .navbar-nav li a {
-    color: rgb(30, 178, 192);
+    color: #D66360;
     font-family: 'Lato', sans-serif;
 }
 .navbar-nav li a:hover {
@@ -71,35 +70,47 @@ p {
 .panel {
     background-image: none;
     background-color: white;
-    border: 1px solid rgb(30, 178, 192);
-    color: rgb(30, 178, 192);
+    border: 1px solid #D66360;
+    color: #D66360;
 }
 
 .panel > .panel-heading {
 	color: white;
-	background-color: rgb(30, 178, 192);
+	background-color: #D66360;
+}
+
+.table {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+p {
+    color: #D66360;
 }
 
 #inputName {
-	border: 1px solid rgb(30, 178, 192);
+	border: 1px solid #D66360;
 }
 #inputEmail {
-	border: 1px solid rgb(30, 178, 192);
+	border: 1px solid #D66360;
 }
 #inputSubject {
-	border: 1px solid rgb(30, 178, 192);
+	border: 1px solid #D66360;
 }
 #inputMessage {
-	border: 1px solid rgb(30, 178, 192);
+	border: 1px solid #D66360;
 }
 
 #submitButton {
-	border: 1px solid rgb(30, 178, 192);
-	color: rgb(30, 178, 192);
+	border: 1px solid #D66360;
+	color: #D66360;
 }
 
 .col-md-9 {
-	color: rgb(30, 178, 192);
+	color: #D66360;
 }
 
 .col-md-3 {
@@ -107,9 +118,14 @@ p {
 }
 
 .col-md-3 > ul {
-	border: 1px solid rgb(30, 178, 192);
+	border: 1px solid #D66360;
+    background-color: white;
+}
+
+a {
+    color: #D66360;
 }
 
 div.panel-heading {
-	background-color: rgb(30, 178, 192);
+	background-color: #D66360;
 }

@@ -15,7 +15,7 @@
 		<div class="container">
 			<header class="top" role="header">
 			    <div class="container">
-			    	<a href="/home.html" class="navbar-brand pull-left">
+			    	<a href="/home.html" class="navbar-brand">
 			            Anthony Mace
 			        </a>
 			        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,7 +23,6 @@
 			        </button>
 			        <nav class="navbar-collapse collapse" role="navigation">
 			            <ul class="navbar-nav nav">
-			                <li><a href="#">Projects</a></li>
 			                <li><a href="/contact.html">Contact</a></li>
 			            </ul>
 			        </nav>
@@ -41,41 +40,43 @@
 	                <div class="panel-heading">
 	                    <h2 class="panel-title">Contact Form</h2>
 	                </div>
-	                <div ng-controller="ContactController" class="panel-body">
-	                    <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
-	                        <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-	                            <label for="inputName" class="col-lg-2 control-label">Name</label>
+	                <div class="panel-body">
+	                    <form name="contactForm" ng-submit="main.submitForm(contactForm.$valid)" class="form-horizontal" role="form" novalidate>
+	                        <div class="form-group" ng-class="{ 'has-error' : contactForm.inputName.$invalid && !contactForm.inputName.$pristine }">
+	                            <label class="col-lg-2 control-label">Name</label>
 	                            <div class="col-lg-10">
-	                                <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
+	                                <input ng-model="main.nameFromForm" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
+	                                <p ng-show="contactForm.inputName.$invalid && !contactForm.inputName.$pristine" class="help-block">*Your name is required.</p>
 	                            </div>
 	                        </div>
-	                        <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-	                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+	                        <div class="form-group" ng-class="{ 'has-error' : contactForm.inputEmail.$invalid && !contactForm.inputEmail.$pristine }">
+	                            <label class="col-lg-2 control-label">Email</label>
 	                            <div class="col-lg-10">
-	                                <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
+	                                <input ng-model="main.emailFromForm" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" 
+	                                ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/"required>
+	                                <p ng-show="contactForm.inputEmail.$invalid && !contactForm.inputEmail.$pristine" class="help-block">*Enter a valid email.</p>
 	                            </div>
 	                        </div>
-	                        <div class="form-group" ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
-	                            <label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+	                        <div class="form-group">
+	                            <label class="col-lg-2 control-label">Subject</label>
 	                            <div class="col-lg-10">
-	                                <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject Message" required>
+	                                <input ng-model="main.subjectFromForm" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject Message">
 	                            </div>
 	                        </div>
-	                        <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-	                            <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+	                        <div class="form-group" ng-class="{ 'has-error' : contactForm.inputMessage.$invalid && !contactForm.inputMessage.$pristine }">
+	                            <label class="col-lg-2 control-label">Message</label>
 	                            <div class="col-lg-10">
-	                                <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
+	                                <textarea ng-model="main.messageFromForm" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
+	                                <p ng-show="contactForm.inputMessage.$invalid && !contactForm.inputMessage.$pristine" class="help-block">*A message is required.</p>
 	                            </div>
 	                        </div>
 	                        <div class="form-group">
 	                            <div class="col-lg-offset-2 col-lg-10">
-	                                <button type="submit" class="btn btn-default" ng-disabled="submitButtonDisabled" id="submitButton">
-	                                    Send Message
-	                                </button>
+	                                <button type="submit" class="btn btn-default" id="submitButton" ng-disabled="submitButtonDisabled">Send Message</button>
 	                            </div>
 	                        </div>
 	                    </form>
-	                    <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
+	                    <p ng-class="result" style="padding: 15px; margin: 0;">{{main.resultMessage}}</p>
 	                </div>
 				</div>
 			</div>
@@ -86,6 +87,7 @@
 	            <ul class="nav nav-pills nav-stacked">
 	                <li><a href="http://github.com/amaceing" target="_blank">github</a></li>
 	                <li><a href="https://www.linkedin.com/pub/anthony-mace/85/b38/a40" target="_blank">linkedin</a></li>
+	                <li><a href="mailto:amace93@gmail.com?Subject=Hello" target="_top">send email</a></p></li>
 	            </ul>
 	        </div>
 		</div>
