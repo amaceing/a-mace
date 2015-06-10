@@ -8,8 +8,20 @@
 		<title>Software Developer</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+		<link rel="stylesheet" href="CSS/github-activity-0.1.1.min.css">
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+		<script type="text/javascript" src="JS/github.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script>			
+		  function updateFeed(username) {
+		    GitHubActivity.feed({ username: username, selector: '#feed', limit: 10});
+		  }
+
+		  $(document).ready(function() {
+		    updateFeed('amaceing');
+		  });
+		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -23,7 +35,8 @@
 			        </button>
 			        <nav class="navbar-collapse collapse" role="navigation">
 			            <ul class="navbar-nav nav">
-			                <li><a href="/contact.html">Contact</a></li>
+			                <li><a href="/blog.html">Blog</a></li>
+			              	<li><a href="/contact.html">Contact</a></li>
 			            </ul>
 			        </nav>
 			    </div>
@@ -84,7 +97,7 @@
 			    		<tr>
 			    			<td>Objective-C</td>
 			    			<td>Proficient</td>
-			    			<td>2.5</td>
+			    			<td>1.5</td>
 			    		</tr>
 			    		<tr>
 			    			<td>Swift</td>
@@ -124,6 +137,8 @@
 			    	</tbody>
 			  	</table>
 			</div>
+			<div id="feed"></div>
+			<div class="clearfix">&nbsp;</div>
 		</div>
 	</body>
 </html>
