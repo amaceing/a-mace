@@ -4,16 +4,16 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: lato;
-	background-color: #F2F1ED;
+	background-color: #F6F6F6;
 }
 
 h1 {
 	font-size: 70px;
-	color: #D66360;
+	color: #4A5961;
 }
 
 h3 {
-    color: #D66360;
+    color: #4A5961;
 }
 
 .banner {
@@ -24,7 +24,7 @@ h3 {
 
 .banner > .container > p {
 	font-size: 17px;
-	color: #D66360;
+	color: #4A5961;
 	text-align: left;
 }
 
@@ -34,19 +34,19 @@ h3 {
     text-align: center;
     padding: 0 10px;
     background-color: white;
-    color: #D66360;
+    color: #4A5961;
     text-decoration: none;
     font-size: 25px;
-    background-color: #F2F1ED
+    background-color: #F6F6F6;
 }
 
 .navbar-brand li a:hover {
-	color: #D66360;
+	color: #4A5961;
     font-family: 'Lato', sans-serif;
 }
 
 .navbar-toggle {
-    color: #D66360;
+    color: #4A5961;
     font-size: 32px;
     margin: 3px;
     padding: 2px 5px;
@@ -60,7 +60,7 @@ h3 {
 }
 
 .navbar-nav li a {
-    color: #D66360;
+    color: #4A5961;
     font-family: 'Lato', sans-serif;
 }
 .navbar-nav li a:hover {
@@ -70,17 +70,28 @@ h3 {
 .panel {
     background-image: none;
     background-color: white;
-    border: 1px solid #D66360;
-    color: #D66360;
+    border: none;
+    color: #4A5961;
+}
+
+
+.panel-heading {
+    border-bottom: 1px solid #4A5961;
 }
 
 .panel > .panel-heading {
-	color: white;
-	background-color: #D66360;
+    font-size: 25px;
+	color: #4A5961;
+	background-color: #F6F6F6;
+    border-bottom: 1px solid #4A5961;
 }
 
 .table {
     text-align: center;
+}
+
+.thumbnail {
+    border: none;
 }
 
 th {
@@ -88,44 +99,41 @@ th {
 }
 
 p {
-    color: #D66360;
+    color: #4A5961;
 }
 
 #inputName {
-	border: 1px solid #D66360;
+	border: 1px solid #4A5961;
 }
 #inputEmail {
-	border: 1px solid #D66360;
+	border: 1px solid #4A5961;
 }
 #inputSubject {
-	border: 1px solid #D66360;
+	border: 1px solid #4A5961;
 }
 #inputMessage {
-	border: 1px solid #D66360;
+	border: 1px solid #4A5961;
 }
 
 #submitButton {
-	border: 1px solid #D66360;
-	color: #D66360;
+	border: 1px solid #4A5961;
+	color: #4A5961;
 }
 
 .col-md-9 {
-	color: #D66360;
+	color: #4A5961;
 }
 
 .col-md-3 {
-	color: white;
+    font-size: 25px;
+	color: #4A5961;
 }
 
 .col-md-3 > ul {
-	border: 1px solid #D66360;
     background-color: white;
+    font-size: 15px;
 }
 
 a {
-    color: #D66360;
-}
-
-div.panel-heading {
-	background-color: #D66360;
+    color: #4A5961;
 }
