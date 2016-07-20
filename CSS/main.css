@@ -7,8 +7,8 @@ body {
 }
 
 .info-box {
-	color: #555B6E;
-	background-color: #BEE3DB;
+	color: #6B7D7D;
+	background-color: #D7DAE5;
 }
 
 .action-buttons {
@@ -17,8 +17,8 @@ body {
 	-ms-user-select: none; /* IE10+ */
 	-webkit-tap-highlight-color:transparent;
 	cursor: hand;
-	color: #FAF9F9;
-	background-color: #89B0AE;
+	color: #8EAF9D;
+	background-color: #B9CDDA;
 }
 
 .card {

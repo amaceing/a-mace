@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS/main.css">
   </head>
   <body  ng-controller="MainController" ng-cloak layout="row">
-    <md-sidenav flex="25" md-is-locked-open="true" class="md-whiteframe-z2" layout="column">
+    <md-sidenav flex="25" md-is-locked-open="true" class="md-whiteframe-z2" layout="column" hide-sm hide-xs>
       <div flex="25" class="info-box container-fluid banner">
         <h1>
           Anthony Mace
@@ -22,7 +22,7 @@
       <div flex="25" class="action-buttons" ng-repeat="button in buttons" ng-click="actionButton()">
         <div ng-show="$index==0" class="clearfix">&nbsp;</div>
         <h2>{{button.title}}</h2>
-        <h4 style="color:#FFD6BA;">{{button.subtext}}</h4>
+        <h4 style="color:#A6D8D4;">{{button.subtext}}</h4>
       </div>
     </md-sidenav>
     <md-content flex="75" style="background-color:#BEE3DB;" class="container-fluid">
