@@ -12,7 +12,21 @@ body {
 }
 
 .action-buttons {
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	-webkit-tap-highlight-color:transparent;
 	cursor: hand;
 	color: #6C698D;
 	background-color: #D4D2D5;
+}
+
+.card {
+	max-height: 75%;
+}
+
+.mountain {
+    width: 100%; /* you can use % */
+    height: auto;
+    text-align: center;
 }

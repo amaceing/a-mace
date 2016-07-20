@@ -1,6 +1,10 @@
 angular.module('PortfolioApp', ['ngMaterial']).controller('MainController', 
 
 function($scope) {
+
+    $scope.buttonClicked = false;
+    $scope.imagePath = "Images/profilePic.jpg"
+
     $scope.title = "My Name Here";
     $scope.buttons = 
     [
