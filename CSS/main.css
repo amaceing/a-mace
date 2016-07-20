@@ -3,9 +3,16 @@ body {
 }
 
 .text-center {
-	text-align: center;
+	text-align: center !important;
 }
 
 .info-box {
-	background-color: #BCE2E5;
+	color: #D4D2D5;
+	background-color: #6C698D;
+}
+
+.action-buttons {
+	cursor: hand;
+	color: #6C698D;
+	background-color: #D4D2D5;
 }
